@@ -1,0 +1,19 @@
+Package: Regionvelocity
+Type: Package
+Title: RNA Region velocity estimation in R
+Version: 1.6
+Date: 2024-1-4
+Author: Chen Zhang
+Maintainer: Chen Zhang <zhangchen3@u.nus.edu>
+Description: Provides basic routines for estimation of gene-specific transcriptional derivatives and visualization of the resulting region velocity patterns.
+License: GPL-3
+Depends: Matrix
+Imports: Rcpp (>= 0.12.13), MASS, mgcv, parallel, pcaMethods, abind,
+        cluster, stats, grDevices, igraph, methods, hdf5r
+Suggests: Rtsne, BiocGenerics, Biostrings, GenomeInfoDb,
+        GenomicAlignments, GenomicRanges, IRanges, data.table,
+        Rsamtools, edgeR, h5
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2022-01-22 12:03:19 UTC; ZCLH
