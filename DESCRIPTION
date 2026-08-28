@@ -1,0 +1,25 @@
+Package: Loopvelocity
+Type: Package
+Title: Loop Velocity Estimation from Single-Cell Hi-C
+Version: 2.0.0
+Date: 2026-08-27
+Authors@R: person(given = "Chen", family = "Zhang",
+  email = "zhangchen3@u.nus.edu", role = c("aut", "cre"))
+Description: Estimates loop velocity, the time derivative of the chromatin
+  contact state, from single-cell Hi-C. A loop-extrusion kinetic model
+  (one-sided phi(alpha, beta, gamma) and two-sided phi(alpha, theta, gamma)
+  parameterizations) is fitted to contacts in ~50kb windows around TAD
+  boundaries via a steady-state regression or an EM dynamical model, and
+  cell states are extrapolated on embeddings. Provides native readers for
+  cool/mcool/scool, 4DN pairs, and sparse contact matrices, plus
+  insulation-score TAD boundary calling.
+License: GPL-3
+Depends: R (>= 4.3), Matrix
+Imports: Rcpp (>= 1.0.10), parallel, stats, graphics,
+        grDevices, utils, methods
+Suggests: hdf5r, strawr, Rtsne, testthat (>= 3.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+NeedsCompilation: yes
+Config/roxygen2/version: 8.1.0

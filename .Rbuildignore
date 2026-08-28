@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^testdata/
+^Loopvelocity_.*\.tar\.gz$
+^Loopvelocity\.Rcheck$
+^\.Rhistory$
+^\.Rdata$
