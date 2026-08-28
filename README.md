@@ -61,17 +61,26 @@ constraint.
 
 ## Install
 
-```r
-# release
-remotes::install_github("Dekayzc/Loopvelocity")
+From CRAN-style GitHub install:
 
-# development
-remotes::install_github("Dekayzc/Loopvelocity", ref = "main")
+```r
+remotes::install_github("Dekayzc/Loopvelocity")
 ```
 
+Or via conda (recommended when you want the compiled dependencies
+prebuilt):
+
+```bash
+conda create -y -n loopvelocity -c conda-forge \
+  r-base r-remotes r-rcpp r-rcpparmadillo compilers
+conda activate loopvelocity
+Rscript -e 'remotes::install_github("Dekayzc/Loopvelocity")'
+```
+
+Optional dependencies: `hdf5r` (cooler-format input; add `r-hdf5r` to the
+conda line), `strawr` (Juicer .hic input), `Rtsne` (tSNE diagnostic plot).
+
 System requirements: a C++14 compiler; OpenMP for multithreaded kernels.
-Optional: `hdf5r` (cooler-format input), `strawr` (Juicer .hic input),
-`Rtsne` (tSNE diagnostic plot).
 
 ## Quick start (pre-summarized boundary tables)
 
